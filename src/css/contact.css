@@ -1,0 +1,287 @@
+.contact-hero{
+     position: relative;
+     background: var(--simple-white);
+}
+
+.contact-hero-content{
+      position: relative;
+      z-index: 3;
+      padding: 80px 0 180px 0;
+}
+.contact-hero-texts{
+     text-align: center;
+}
+.contact-hero-texts h1{
+    font-size: 60px;
+    width: 500px;
+    margin: 10px auto;
+}
+.contact-hero-texts p{
+      font-size: 20px;
+      width: 900px;
+      margin: auto;
+}
+
+.contact-form-section{
+    position: relative;
+    background: var(--dark-color);
+    padding: 144px 0;
+}
+
+.contact-form-content{
+      position: relative;
+      z-index: 3;
+      background: white;
+      width: 80%;
+      margin: -270px auto 0 auto;
+      padding: 100px;
+}
+
+.contact-form-content .form-row{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap:40px;
+    margin-bottom: 40px;
+}
+.contact-form-content .form-row label,
+.contact-form-content .message-part label{
+      font-size: 18px;
+      display: block;
+      font-family: "Madera-Medium";
+      margin-bottom: 5px;
+}
+.contact-form-content .form-control{
+      width: 100%;
+      height: 60px;
+      font-family: "Madera-Light";
+      font-size: 16px;
+      padding-left: 15px;
+      background: none;
+      border:none;
+      border-bottom: 1px solid gainsboro;
+      outline: none;
+}
+.contact-form-content textarea{
+      width: 100%;
+      font-family: "Madera-Light";
+      padding: 15px;
+      height: 150px;
+      border:none;
+      outline: none;
+      background: none;
+      font-size: 16px;
+      border-bottom: 1px solid gainsboro;
+}
+
+.contact-form-content button{
+    width: 230px;
+    height: 65px;
+    cursor: pointer;
+    margin-top: 40px;
+    border:none;
+    background: var(--dark-color);
+    border-radius: 60px;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: white;
+    justify-content: center;
+    font-family: "Madera-Medium";
+    font-size: 16px;
+    transition: all 0.2s ease;
+}
+
+.contact-form-content button span{
+    display: flex;
+    font-size: 18px;
+    margin-top: 5px;
+}
+
+.contact-form-content button:hover{
+    gap: 10px;
+}
+.details-section{
+      padding: 140px 0;
+      background: var(--simple-white);
+      position: relative;
+}
+.details-section-content{
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      position: relative;
+      z-index: 3;
+}
+
+.small-details{
+      background: var(--dark-color);
+      padding: 50px 80px;
+      color: white;
+      width: 450px;
+      height: max-content;
+      position: absolute;
+      left: 0;
+      z-index: 5;
+}
+
+.small-details h2{
+      font-size: 40px;
+}
+.small-details .contact-header{
+     display: flex;
+     align-items: center;
+     gap: 10px;
+     margin: 40px 0 10px 0;
+}
+.small-details .contact-header span{
+      font-size: 24px;
+      display: flex;
+      margin-top: 8px;
+}
+.small-details .contact-header h3{
+    font-size: 25px;
+    font-family: "Madera-Thin";
+}
+
+.small-details-box p,
+.small-details a{
+     font-size: 20px;
+     font-family: "Madera-Ultra-Light";
+     margin-left: 10%;
+     color: gainsboro;
+     display: block;
+     margin-bottom: 10px;
+}
+.contact-map{
+      width: 80%;
+      height: 600px;
+}
+.contact-map iframe{
+      width: 100%;
+      border:none;
+      filter: grayscale(100%);
+      height: 100%;
+}
+
+.faqs-section{
+     background: var(--dark-color);
+     position: relative;
+     padding: 124px 0;
+}
+.faqs-section-content{
+      position: relative;
+      color: var(--simple-white);
+      z-index: 3;
+}
+.faqs-section-content h1{
+    font-size: 50px;
+    text-align: center;
+}
+.faqs-section-row{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 50px;
+}
+.faq-moja{
+     height: max-content;
+     border-top: 1px solid rgba(183, 181, 181, 0.551);
+     padding: 40px 0;
+}
+
+.faq-moja .faq-question{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+    cursor: pointer;
+    position: relative;
+}
+.faq-question h2{
+    font-size: 19px;
+    width: 80%;
+}
+.faq-question span{
+      width: 35px;
+      height: 35px;
+      margin-top: 8px;
+      border-radius: 50%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      background: rgba(220, 220, 220, 0.264);
+      position: absolute;
+      right: 0;
+      font-size: 18px;
+      transition: all 0.5s ease
+}
+.faq-question span.minus{
+    opacity: 0;
+}
+.faq-question.active span.plus{
+     opacity: 0;
+}
+.faq-question.active span.minus{
+      opacity: 1
+}
+.faq-answer{
+      max-height: 0;
+      overflow: hidden;
+      transition: all 0.5s ease;
+}
+.faq-answer.active{
+     max-height: 300px;
+}
+.faq-answer-inner{
+    padding: 25px 0;
+}
+.faq-answer p{
+      line-height: 28px;
+}
+@media(max-width: 1050px){
+      .contact-hero-texts p{
+            width: 90%;
+      }
+      .details-section-content{
+            flex-direction: column;
+            align-items: center;
+      }
+      .small-details{
+           position: relative;
+           width: 100%;
+      }
+      .small-details-box p,
+      .small-details a{
+        margin-left: 0;
+      }
+      .contact-map{
+             width: 100%;
+      }
+      .faq-question h2{
+        font-size: 18px;
+        font-family: "Madera-Light";
+      }
+      .faqs-section-row{
+           grid-template-columns: repeat(1,1fr);
+           gap: 0;
+      }
+}
+
+@media(max-width: 768px){
+      .contact-form-content .form-row{
+              grid-template-columns: repeat(1,1fr);
+      }
+      .contact-hero-texts h1{
+            width: 100%;
+      }
+      .faqs-section-content h1{
+              font-size: 35px;
+      }
+}
+
+@media(max-width: 500px){
+    .contact-form-content{
+          width: 100%;
+          padding: 60px 40px;
+    }
+}
